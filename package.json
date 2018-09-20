@@ -3,18 +3,33 @@
   "version": "0.1.0",
   "description": "Fastify NeDB plug-in",
   "main": "fastify-nedb.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "Fastify",
     "NeDB",
     "Plug-in"
   ],
-  "author": "Alex Vu Nguyen",
+  "author": "Alex Vu Nguyen <vu@vnguyen.io>",
   "license": "MIT",
+  "config": {
+    "dataFolder": "data"
+  },
+  "scripts": {
+    "test": "standard --fix && jest fastify-nedb.test.js"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
   "dependencies": {
     "fastify-plugin": "^1.2.1",
-    "nedb": "^1.8.0"
+    "fs-extra": "^7.0.0",
+    "nedb": "^1.8.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "fastify": "^1.11.2",
+    "jest": "^23.6.0",
+    "standard": "^12.0.1"
   }
 }
