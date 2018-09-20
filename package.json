@@ -1,0 +1,20 @@
+{
+  "name": "fastify-nedb",
+  "version": "0.1.0",
+  "description": "Fastify NeDB plug-in",
+  "main": "fastify-nedb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Fastify",
+    "NeDB",
+    "Plug-in"
+  ],
+  "author": "Alex Vu Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "fastify-plugin": "^1.2.1",
+    "nedb": "^1.8.0"
+  }
+}
