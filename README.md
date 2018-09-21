@@ -4,27 +4,27 @@
 
 ## Installation
 
-```
+```npm
 npm install fastify-nebd --save
 ```
 
 ## Usage
 
-```
+```javascript
 fastify.register(require('fastify-nedb'), {
   dataStores: ['user']
 }, err => console.error(err))
 
 fastify.get('/', (request, reply) => {
   console.log(fastify.db.user) // NeDB persistence saved to dataFolder/user.db
-}) 
+})
 ```
 
 ## Options
 
-JSON object.
+Options object.
 
-```
+```javascript
 {
   dataFolder: 'folder' // default to 'data'
   dataStores: ['store1', 'store2'] // must be specified

@@ -25,7 +25,7 @@ function fastifyNeDB (fastify, opts, next) {
     })
   }
 
-  fastify.db = db
+  fastify.decorate('db', db)
 
   next()
 }
